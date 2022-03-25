@@ -56,7 +56,7 @@ function AppBar(props) {
               <h6 className="mt-4 mb-1 text-muted h6">Account</h6>
               <Nav.Link eventKey="#" className="d-flex gap-2"><Icon.CheckCircle/>Authentication</Nav.Link>
               <Nav.Link eventKey="#" className="d-flex gap-2"><Icon.User/>Users</Nav.Link>
-              <Link to="/" className="d-flex gap-2 text-muted mt-4"><Icon.LogOut/>Logout</Link>
+              <Link to="#" className="d-flex gap-2 text-muted mt-4" onClick={onLogoutRequest}><Icon.LogOut/>Logout</Link>
             </Nav>
         </Offcanvas.Body>
         </Navbar.Offcanvas>

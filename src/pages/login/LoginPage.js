@@ -9,6 +9,7 @@ import {auth} from "libs/firebase";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FormGroup } from "react-bootstrap";
 
 // Add event listener
 
@@ -64,10 +65,15 @@ function LoginPage(props) {
                         <Form.Control type="email" placeholder="Enter email" onChange={(e)=> setEmail(e.target.value)}/>
                     </Form.Group>
         
-                    <Form.Group className="mb-5" controlId="formBasicPassword">
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" onChange={(e)=> setPassword(e.target.value)}/>
                     </Form.Group>
+                    
+                    <FormGroup>
+                        <small><p className="text-muted mb-5">Forgot your password?</p></small>
+                    </FormGroup>
+
                     <Button variant="primary" type="submit" className="w-100">
                         Submit
                     </Button>
