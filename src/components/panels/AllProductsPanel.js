@@ -13,7 +13,7 @@ function AllProductsPanel(props) {
       <div className="d-flex justify-content-between gap-1 flex-wrap flex-md-nowrap align-items-center pt-4 pb-3 mb-3 border-bottom">
         <h1 className="h2">Products</h1>
 
-        <div className="d-flex gap-2 justify-content-between">
+        <div className="d-flex gap-3 justify-content-between">
           <Link to="add">
             <Button className="d-flex gap-1 btn-sm align-items-center">
               <Icon.Plus/>Add Product
