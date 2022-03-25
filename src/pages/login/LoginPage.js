@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {useNavigate} from 'react-router-dom';
 
-import {signInWithEmailAndPassword, createUserWithEmailAndPassword} from "firebase/auth";
+import {signInWithEmailAndPassword} from "firebase/auth";
 import {ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {auth} from "libs/firebase";
@@ -71,7 +71,7 @@ function LoginPage(props) {
                     </Form.Group>
                     
                     <FormGroup className="text-muted mb-4">
-                        <small><p>Forgot your password?</p></small>
+                        <small><a>Forgot your password?</a></small>
                     </FormGroup>
 
                     <Button variant="primary" type="submit" className="w-100">
