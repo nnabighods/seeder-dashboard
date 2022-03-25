@@ -70,8 +70,8 @@ function LoginPage(props) {
                         <Form.Control type="password" placeholder="Password" onChange={(e)=> setPassword(e.target.value)}/>
                     </Form.Group>
                     
-                    <FormGroup>
-                        <small><p className="text-muted mb-5">Forgot your password?</p></small>
+                    <FormGroup className="text-muted mb-5">
+                        <small><p>Forgot your password?</p></small>
                     </FormGroup>
 
                     <Button variant="primary" type="submit" className="w-100">
